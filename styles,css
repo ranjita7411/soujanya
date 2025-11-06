@@ -1,0 +1,135 @@
+/* Add to styles.css */
+
+/* Resume Page Specifics */
+#resume-content {
+    padding: 1em 2em; /* Adjust padding as needed */
+}
+
+.resume-section {
+    margin-bottom: 2.5em;
+    padding-bottom: 1.5em;
+    border-bottom: 1px dashed #e0e0e0;
+}
+
+.resume-section:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.resume-section h2 {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    display: inline-block;
+    padding-bottom: 0.3em;
+    margin-bottom: 1em;
+    font-size: 1.8em;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px;
+    margin-top: 1em;
+}
+
+.info-grid div {
+    background-color: #f9f9f9;
+    padding: 10px 15px;
+    border-left: 3px solid #007bff;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.education-item,
+.experience-item,
+.project-item {
+    margin-bottom: 1.5em;
+    padding-left: 15px;
+    border-left: 3px solid #ccc;
+}
+
+.education-item h3,
+.experience-item h3,
+.project-item h3 {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    color: #444;
+    font-size: 1.3em;
+}
+
+.education-item p,
+.experience-item p,
+.project-item p {
+    margin-bottom: 0.5em;
+    font-size: 0.95em;
+}
+
+.education-item ul,
+.experience-item ul {
+    list-style: disc;
+    margin-left: 20px;
+    padding-left: 0;
+    margin-top: 0.5em;
+}
+
+.education-item ul li,
+.experience-item ul li {
+    margin-bottom: 0.5em;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2em;
+    margin-top: 1em;
+}
+
+.skill-category h3 {
+    color: #555;
+    margin-bottom: 0.8em;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5em;
+}
+
+.skill-category ul {
+    list-style: none; /* Remove default bullet */
+    padding: 0;
+}
+
+.skill-category ul li {
+    background-color: #e9f7ff;
+    border-left: 4px solid #007bff;
+    margin-bottom: 8px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+.skill-category ul li:hover {
+    background-color: #d1efff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    #hero h1 {
+        font-size: 2em;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .info-grid, .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
